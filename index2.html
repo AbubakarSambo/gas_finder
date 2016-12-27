@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+<link rel="stylesheet" href="css/index.css">
+
+<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0OldYQTMpXGgsRAppUnkGK6wmg3r3G-4&callback=initMap&libraries=places"
+	async defer></script>
+	
+	<script type="text/javascript">
+
+function showmore(){
+	alert("brah");
+}
+
+</script>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.js"></script>
+<script src="js/main.js"></script>
+<script src="js/table.js"></script>
+
+</head>
+<body>
+
+	<!-- 1: Start page: general -->
+	<div data-role="page" data-theme="a">
+
+		<!-- header -->
+		<!-- <div data-role="header" class="clr-bg-blue-grey" style="color: white;"> -->
+		<div data-role="header" id="asap" style="color: white;">
+			<div class="container ui-title"
+				style="text-align: center; margin: 0 auto;">
+				<h1>ASAPP DEMO</h1>
+			</div>
+			<!-- <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-alt" style="top:25%">Open Menupane</a>	 -->
+			<!-- <a href="#left-panel" class="ui-btn ui-btn-icon-left ui-icon-bars ui-alt-icon" style="top:25%"></a>					 -->
+		</div>
+		<!-- /header -->
+
+
+
+		<!-- General Page -->
+		<div data-role="main" class="ui-content">
+
+			<div id="map" class="ui-content">
+
+
+
+
+			</div>
+
+			<!-- <p>General </p> -->
+			<!-- <button id="openpanel">Slide Botton</button> -->
+			<div id="box" class="box" style="width: 100%;">
+
+				<div class="box-inner ui-content">
+					<div id="table_head">
+						<!-- MORE INFO SECTION -->
+						<!-- This section name will change as the user selects a location -->
+						<div class="ui-block-a" style="width: 80%; font-size: 2em;">
+							STATION NAME:</div>
+						<div id="close" class="ui-block-b" style="width: 20%">
+							X</div>
+
+					</div>
+					<!-- <table data-role="table" id="results-table" data-mode="reflow" class="ui-responsive"> -->
+					<table id="results-table" class="ui-table">
+						<thead>
+							<tr>
+								<th></th>     
+							</tr>
+						</thead>
+
+
+						<tbody>
+
+							<tr>
+								      
+								<th>Fuel Availability:</th>       
+								<td><span id="fuel_avail">CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT </span></td>     
+							</tr>
+
+							    
+							<tr>
+								      
+								<th>Fuel Price:</th>       
+								<td><span id="fuel_price">CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT  </span></td>     
+							</tr>
+
+							    
+							<tr>
+								      
+								<th>Address:</th>       
+								<td><span id="address"></span></td>     
+							</tr>
+
+							    
+							<tr>								      
+								<th>Phone:</th>       
+								<td><span id="phone"></span></td>     
+							</tr>
+
+							    
+							<tr>								      
+								<th>Car Wash:</th>       
+								<td><span id="carw_avail"> </span></p></td>     
+							</tr>
+
+							    
+							<tr>								      
+								<th>Mini Mart:</th>       
+								<td><span id="mini_avail"><span></td>     
+							</tr>
+
+							    
+							<tr>								      
+								<th>Service:</th>       
+								<td><span id="serv_avail"></td>     
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+
+		<!-- 	<div data-role="footer">
+		<h1>Footer Text</h1>
+	</div> -->
+	</div>
+
+</body>
+</html>
+
